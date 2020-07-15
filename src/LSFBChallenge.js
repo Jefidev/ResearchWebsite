@@ -1,6 +1,7 @@
 import React from 'react';
 import unamur from './assets/images/LSFB/UNamur.png'
 import baillet from './assets/images/LSFB/baillet.svg'
+import SignGallery from './lsfb/SignGallery'
 
 
 
@@ -78,53 +79,7 @@ function DatasetDescription() {
           Celui-ci contient environ 80% des données. 77 signeurs différents sont représentés. Les exemples suivants vous donneront un apperçus du dataset et de ses challenges.
         </p>
 
-        <div className='w-full'>
-          <p className='text-sm'><b>AUSSI</b></p>
-          <div className="flex flex-wrap">
-            <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-              <img className="m-1" src={require("./assets/images/LSFB/dataset/aussi/S011.gif")}></img>
-            </div>
-            <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-              <img className="m-1" src={require("./assets/images/LSFB/dataset/aussi/S018.gif")}></img>
-            </div>
-            <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-              <img className="m-1" src={require("./assets/images/LSFB/dataset/aussi/S034.gif")}></img>
-            </div>
-            <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-              <img className="m-1" src={require("./assets/images/LSFB/dataset/aussi/S046.gif")}></img>
-            </div>
-            <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-              <img className="m-1" src={require("./assets/images/LSFB/dataset/aussi/S057.gif")}></img>
-            </div>
-            <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-              <img className="m-1" src={require("./assets/images/LSFB/dataset/aussi/S002.gif")}></img>
-            </div>
-          </div>
-        </div>
-
-        <div className='w-full mt-2'>
-          <p className='text-sm'><b>AVOIR</b></p>
-          <div className="flex flex-wrap">
-            <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-              <img className="m-1" src={require("./assets/images/LSFB/dataset/aussi/S011.gif")}></img>
-            </div>
-            <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-              <img className="m-1" src={require("./assets/images/LSFB/dataset/aussi/S018.gif")}></img>
-            </div>
-            <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-              <img className="m-1" src={require("./assets/images/LSFB/dataset/aussi/S034.gif")}></img>
-            </div>
-            <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-              <img className="m-1" src={require("./assets/images/LSFB/dataset/aussi/S046.gif")}></img>
-            </div>
-            <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-              <img className="m-1" src={require("./assets/images/LSFB/dataset/aussi/S057.gif")}></img>
-            </div>
-            <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-              <img className="m-1" src={require("./assets/images/LSFB/dataset/aussi/S002.gif")}></img>
-            </div>
-          </div>
-        </div>
+        <DatasetGalery />
 
       </div>
 
@@ -197,6 +152,14 @@ function About() {
       </div>
 
     </section>
+  )
+}
+
+function DatasetGalery() {
+  return (
+    <div className="w-full">
+      <SignGallery />
+    </div >
   )
 }
 
