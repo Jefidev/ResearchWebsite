@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './Home';
-import LsfbChallenge from './LSFBChallenge'
+import BaseSite from './lsfb/BaseSite'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App(props) {
@@ -9,7 +9,7 @@ function App(props) {
       <div className="App">
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/LSFB" exact component={LsfbChallenge} />
+          <Route path="/LSFB" component={BaseSite} />
         </Switch>
       </div>
     </Router>
