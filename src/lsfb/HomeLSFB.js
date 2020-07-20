@@ -1,7 +1,4 @@
 import React from 'react';
-import unamur from '../assets/images/LSFB/UNamur.png'
-import baillet from '../assets/images/LSFB/baillet.svg'
-import SignGallery from './SignGallery'
 
 
 
@@ -11,6 +8,7 @@ function HomeLSFB(props) {
       <Cover />
       <DatasetDescription />
       <HallOfFame />
+      <Download />
       <About />
     </div>
   );
@@ -23,17 +21,17 @@ function Cover() {
     <div className="lsfb-img bg-cover">
       <div className="text-white p-20 w-2/3">
         <h1 className="text-4xl">Un dataset gratuit pour la langue des signes</h1>
-        <p className="text-justify">
+        <p className="text-justify mb-10">
           Depuis 2013, la laboratoire de langue des signes Belge francophone de l’UNamur collecte et traduit des vidéo de conversations en langue des signes. Afin d’aider à la création d’un algorithme pour la traduction de la langue des signes, nous mettons à votre disposition les vidéos des 10 signes les plus représentés dans le corpus LSFB.
         </p>
 
-        <button className="mt-10 mr-10 bg-teal-500 hover:bg-teal-700 text-white font-bold py-4 px-8 border border-teal-700 rounded">
-          <a href='#dataset'>Le Dataset</a>
-        </button>
+        <a href="#dataset" class="inline-block mt-10 mr-10 text-xl px-8 py-4 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">
+          Le dataset
+        </a>
 
-        <button className="mt-10 bg-teal-500 hover:bg-teal-700 text-white font-bold py-4 px-8 border border-teal-700 rounded">
-          <a href="https://www.corpus-lsfb.be/">Corpus LSFB</a>
-        </button>
+        <a href="https://www.corpus-lsfb.be/" class="inline-block mt-10 text-xl px-8 py-4 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">
+          Corpus LSFB
+        </a>
       </div>
     </div>
   )
@@ -52,14 +50,17 @@ function DatasetDescription() {
         </p>
 
         <p className="mt-8 mb-8">
-          <b>Ensemble d'entrainement : </b> Contient 80% des données. Les signes sont réalisés par 77 signeurs différents
+          <b>Ensemble d'entrainement : </b> Contient 80% des données. Les signes sont réalisés par 77 signeurs différents.
           <br />
-          <b>Ensemble de test : </b> Contient 20% des données. Les signeurs présents dans cet ensemble n'apparaissent jamais dans l'ensemble de test.
+          <b>Ensemble de test : </b> Contient 20% des données. Il est composés de signeurs n'apparaissants pas dans l'ensemble d'entrainement.
         </p>
 
-        <button className="mt-10 bg-teal-500 hover:bg-teal-700 text-white font-bold py-4 px-8 border border-teal-700 rounded">
-          <a href="/jfink/LSFB/sample">Voir un échantillon</a>
-        </button>
+        <a href="/jfink/LSFB/sample" class="inline-block mt-10  bg-teal-500 text-xl px-8 py-4 leading-none border rounded text-white border-white hover:bg-teal-700 mt-4 lg:mt-0">
+          Voir un échantillon
+        </a>
+        <a href="#Download" class="inline-block mt-10 ml-5  bg-teal-500 text-xl px-8 py-4 leading-none border rounded text-white border-white hover:bg-teal-700 mt-4 lg:mt-0">
+          Télécharger
+        </a>
 
       </div>
 
@@ -118,18 +119,53 @@ function About() {
     <section class="bg-white py-8">
       <div class="container py-8 px-6 mx-auto">
         <h1 class="uppercase tracking-wide font-bold text-gray-800 text-xl mb-8">
-          About
+          à propos
         </h1>
 
         <p class="mt-8 mb-8">This template is inspired by the stunning nordic minamalist design - in particular:
             <br />
-          <a class="text-gray-800 underline hover:text-gray-900" href="http://savoy.nordicmade.com/" target="_blank">Savoy Theme</a> created by <a class="text-gray-800 underline hover:text-gray-900" href="https://nordicmade.com/">https://nordicmade.com/</a> and <a class="text-gray-800 underline hover:text-gray-900" href="https://www.metricdesign.no/" target="_blank">https://www.metricdesign.no/</a></p>
+          <a class="text-gray-800 underline hover:text-gray-900" href="http://savoy.nordicmade.com/">Savoy Theme</a> created by <a class="text-gray-800 underline hover:text-gray-900" href="https://nordicmade.com/">https://nordicmade.com/</a> and <a class="text-gray-800 underline hover:text-gray-900" href="https://www.metricdesign.no/" >https://www.metricdesign.no/</a></p>
 
-        <p class="mb-8">Lorem ipsum dolor sit amet, consectetur <a href="#">random link</a> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Vitae aliquet nec ullamcorper sit. Nullam eget felis eget nunc lobortis mattis aliquam. In est ante in nibh mauris. Egestas congue quisque egestas diam in. Facilisi nullam vehicula ipsum a arcu. Nec nam aliquam sem et tortor consequat. Eget mi proin sed libero enim sed faucibus turpis in. Hac habitasse platea dictumst quisque. In aliquam sem fringilla ut. Gravida rutrum quisque non tellus orci ac auctor augue mauris. Accumsan lacus vel facilisis volutpat est velit egestas dui id. At tempor commodo ullamcorper a. Volutpat commodo sed egestas egestas fringilla. Vitae congue eu consequat ac.</p>
+        <p class="mb-8">Lorem ipsum dolor sit amet, consectetur <a href="www.google.be">random link</a> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Vitae aliquet nec ullamcorper sit. Nullam eget felis eget nunc lobortis mattis aliquam. In est ante in nibh mauris. Egestas congue quisque egestas diam in. Facilisi nullam vehicula ipsum a arcu. Nec nam aliquam sem et tortor consequat. Eget mi proin sed libero enim sed faucibus turpis in. Hac habitasse platea dictumst quisque. In aliquam sem fringilla ut. Gravida rutrum quisque non tellus orci ac auctor augue mauris. Accumsan lacus vel facilisis volutpat est velit egestas dui id. At tempor commodo ullamcorper a. Volutpat commodo sed egestas egestas fringilla. Vitae congue eu consequat ac.</p>
 
       </div>
 
     </section>
+  )
+}
+
+function Download() {
+  return (
+    <section className="bg-white py-8" id="Download">
+      <div className="container py-8 px-6 mx-auto border-t">
+        <h1 className="uppercase tracking-wide font-bold text-gray-800 text-xl mb-8">
+          Télécharger
+        </h1>
+
+        <p className="mt-8 mb-8">
+          Le dataset dans son intégralité a une taille de 35Go. Afin d'accéder aux instructions de téléchargement, veuillez d'abord lire et approuver les conditions générales d'utilisation
+        </p>
+
+        <div className="md:flex md:items-center mb-6">
+          <div className="md:w-1/3"></div>
+          <label className="md:w-2/3 block text-gray-800 font-bold">
+            <input className="mr-2 leading-tight" type="checkbox" />
+            <span className="text-sm">
+              J'ai lu et j'accepte les <a class="text-gray-800 underline hover:text-gray-900" href="/jfink/lsfb" target="_blank">Conditions d'utilisation</a>
+            </span>
+          </label>
+        </div>
+        <div className="md:flex md:items-center mb-6">
+          <div className="flex-1">
+            <a href="/jfink/LSFB/sample" class="inline-block mt-10  bg-teal-500 text-xl px-8 py-4 leading-none border rounded text-white border-white hover:bg-teal-700 mt-4 lg:mt-0">
+              Télécharger
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </section >
   )
 }
 

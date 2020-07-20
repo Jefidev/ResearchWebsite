@@ -27,7 +27,7 @@ class SignGallery extends React.Component {
           {
             this.AussiImages.map((image, index) =>
               <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-                <img className="m-1 transform scale-75" key={index} src={image}></img>
+                <img className="m-1 transform scale-75" key={index} src={image} alt="AUSSI"></img>
               </div>
             )
           }
@@ -38,7 +38,7 @@ class SignGallery extends React.Component {
           {
             this.LSimages.map((image, index) =>
               <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-                <img className="m-1 transform scale-75" key={index} src={image}></img>
+                <img className="m-1 transform scale-75" key={index} src={image} alt="LS"></img>
               </div>
             )
           }
@@ -49,7 +49,7 @@ class SignGallery extends React.Component {
           {
             this.AvoirImages.map((image, index) =>
               <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-                <img className="m-1 transform scale-75" key={index} src={image}></img>
+                <img className="m-1 transform scale-75" key={index} src={image} alt="AVOIR"></img>
               </div>
             )
           }
@@ -60,7 +60,7 @@ class SignGallery extends React.Component {
           {
             this.CestImages.map((image, index) =>
               <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-                <img className="m-1 transform scale-75" key={index} src={image}></img>
+                <img className="m-1 transform scale-75" key={index} src={image} alt="C-EST"></img>
               </div>
             )
           }
@@ -71,7 +71,7 @@ class SignGallery extends React.Component {
           {
             this.MaisImages.map((image, index) =>
               <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-                <img className="m-1 transform scale-75" key={index} src={image}></img>
+                <img className="m-1 transform scale-75" key={index} src={image} alt="MAIS"></img>
               </div>
             )
           }
@@ -82,7 +82,7 @@ class SignGallery extends React.Component {
           {
             this.OuiImages.map((image, index) =>
               <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-                <img className="m-1 transform scale-75" key={index} src={image}></img>
+                <img className="m-1 transform scale-75" key={index} src={image} alt="OUI"></img>
               </div>
             )
           }
@@ -93,7 +93,7 @@ class SignGallery extends React.Component {
           {
             this.PlusImages.map((image, index) =>
               <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-                <img className="m-1 transform scale-75" key={index} src={image}></img>
+                <img className="m-1 transform scale-75" key={index} src={image} alt="PLUS"></img>
               </div>
             )
           }
@@ -104,7 +104,7 @@ class SignGallery extends React.Component {
           {
             this.QuoiImages.map((image, index) =>
               <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-                <img className="m-1 transform scale-75" key={index} src={image}></img>
+                <img className="m-1 transform scale-75" key={index} src={image} alt="QUOI"></img>
               </div>
             )
           }
@@ -115,7 +115,7 @@ class SignGallery extends React.Component {
           {
             this.RienImages.map((image, index) =>
               <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-                <img className="m-1 transform scale-75" key={index} src={image}></img>
+                <img className="m-1 transform scale-75" key={index} src={image} alt="RIEN"></img>
               </div>
             )
           }
@@ -126,7 +126,7 @@ class SignGallery extends React.Component {
           {
             this.SourdImages.map((image, index) =>
               <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-1">
-                <img className="m-1 transform scale-75" key={index} src={image}></img>
+                <img className="m-1 transform scale-75" key={index} src={image} alt="SOURD"></img>
               </div>
             )
           }
