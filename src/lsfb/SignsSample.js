@@ -9,7 +9,7 @@ function SignsSample(props) {
           Sign Samples
           </h1>
         <p className="mt-8 mb-8">
-          Voici un apperçus des signes présents dans le dataset
+          Voici un apperçus des séquences vidéos présentent dans le dataset LSFB-10
           </p>
         <SignGallery />
       </div>

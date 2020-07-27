@@ -29,7 +29,7 @@ Le dataset est distribués selon les termes de la Licence Creative Commons 4.0. 
 
 # À PROPOS
 
-Depuis 2013, l'équipe de LSFB-lab collecte et annote des vidéos de langue des signes.
+Depuis 2013, l'équipe du LSFB-lab ...
 
 
 # Echantillons

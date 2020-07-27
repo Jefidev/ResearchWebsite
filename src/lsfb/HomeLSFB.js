@@ -45,14 +45,14 @@ function DatasetDescription() {
           Le Dataset
         </h1>
 
-        <p className="mt-8 mb-8">
-          Il est composé de 7497 clips vidéo répartis dans 10 catégories. Les catégories ne sont pas équilibrées. La moins représentée contient 452 vidéos tandis que la plus représentée en contient plus de 1300. En plus de ces 7497 signes vous trouverez 129 signes appelés <b>rejected</b>. Ceux-ci ne sont pas intégrés aux ensembles d’entrainement et de test car leur durée d’exécution est beaucoup plus importante que la moyenne pour diverses raisons (mauvais découpage, signe maintenu, signe interrompu puis repris). Néanmoins ils restent à votre disposition.
-        </p>
-
-        <p className="mt-8 mb-8">
-          <b>Ensemble d'entrainement : </b> Contient 80% des données. Les signes sont réalisés par 77 signeurs différents.
+        <p className="mt-8 mb-8 text-justify">
+          Il est composé de séquences vidéo extraite de conversations en langue des signes capturées par une caméra classique. Le dataset LSFB-10 contient les dix signes les plus fréquemments utilisés dans les conversations. Au total, 7497 séquences vidéos sont disponibles. Le signe le plus représenté apparait sur 1300 vidéos et le moins représenté sur 452. 80 signeurs sont représentés dans le dataset.
           <br />
-          <b>Ensemble de test : </b> Contient 20% des données. Il est composés de signeurs n'apparaissants pas dans l'ensemble d'entrainement.
+          <br />
+          Le dataset est déjà découpé en <b>ensemble de test</b> et <b>ensemble d'entrainement</b>. Environ 80% des données sont assignées à l'ensemble d'entrainement contre 20% pour l'ensemble de test. Les signeurs présentes dans l'ensemble de test n'apparaissent jamais dans l'ensemble d'entrainement.
+          <br />
+          <br />
+          En plus des 7407 séquences vous trouverez un dossier contenant des video 'rejetées'. Il s'agit de vidéos qui, pour diverses raisons (pause, maintient de signes, ...) durent beaucoup plus longtemps que les autres.
         </p>
 
         <a href="/jfink/LSFB/sample" class="inline-block mt-10  bg-teal-500 text-xl px-8 py-4 leading-none border rounded text-white border-white hover:bg-teal-700 mt-4 lg:mt-0">
@@ -64,7 +64,7 @@ function DatasetDescription() {
 
       </div>
 
-    </section>
+    </section >
   )
 }
 
@@ -142,21 +142,27 @@ function Download() {
           Télécharger
         </h1>
 
-        <p className="mt-8 mb-8">
-          Le dataset dans son intégralité a une taille de 35Go. Afin d'accéder aux instructions de téléchargement, veuillez d'abord lire et approuver les conditions générales d'utilisation
+        <p className="mt-8 mb-2">
+          Le dataset est distribués selon les termes de la <b>Licence Creative Commons 4.0</b>. Le dataset peut être partagé, réutilisé et adapté mais à 3 conditions :
         </p>
+        <ul className="list-disc ml-8 mb-5">
+          <li>Toute utilisation doit faire référence au site www.corpus-lsfb.be et contenir la citation complète « Meurant, Laurence (2015), Corpus LSFB. Un corpus informatisé en libre accès de vidéos et d'annotations de la langue des signes de Belgique francophone (LSFB). Laboratoire de Langue des signes de Belgique francophone (LSFB-Lab). FRS-F.N.R.S et Université de Namur. »</li>
+          <li>Les utilisations ne peuvent être commerciales.</li>
+          <li>Toute utilisation doit se faire dans les mêmes conditions de partage (utilisation de la même licence).</li>
+        </ul>
 
         <div className="md:flex md:items-center mb-6">
           <div className="md:w-1/3"></div>
           <label className="md:w-2/3 block text-gray-800 font-bold">
             <input className="mr-2 leading-tight" type="checkbox" />
             <span className="text-sm">
-              J'ai lu et j'accepte les <a class="text-gray-800 underline hover:text-gray-900" href="/jfink/lsfb" target="_blank">Conditions d'utilisation</a>
+              J'ai lu et j'accepte les <a class="text-gray-800 underline hover:text-gray-900" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Conditions d'utilisation</a>
             </span>
           </label>
         </div>
         <div className="md:flex md:items-center mb-6">
-          <div className="flex-1">
+          <div className="md:w-1/3"></div>
+          <div className="md:w-2/3">
             <a href="/jfink/LSFB/sample" class="inline-block mt-10  bg-teal-500 text-xl px-8 py-4 leading-none border rounded text-white border-white hover:bg-teal-700 mt-4 lg:mt-0">
               Télécharger
             </a>

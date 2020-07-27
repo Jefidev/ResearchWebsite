@@ -22,16 +22,21 @@ function BaseSite(props) {
 function Nav() {
   return (
     <nav className="flex flex-wrap items-center justify-between bg-teal-500 p-6">
-
-      <div className="text-white">
-        <h1 className="text-4xl skew-y-12">LSFB</h1>
-        <p className="text-2xl">Towards Sign Language Translation</p>
-      </div>
+      <a href="/jfink/lsfb">
+        <div className="text-white">
+          <h1 className="text-4xl skew-y-12">LSFB</h1>
+          <p className="text-2xl">Towards Sign Language Translation</p>
+        </div>
+      </a>
 
 
       <div className="flex items-center flex-shrink-0 text-white">
-        <img src={unamur} className="h-24 pr-5" alt="Logo UNamur" />
-        <img src={baillet} className="h-20 mr-auto ml-auto" alt="Logo Fond Baillet Latour" />
+        <a href="https://www.unamur.be">
+          <img src={unamur} className="h-24 pr-5" alt="Logo UNamur" />
+        </a>
+        <a href="https://fondsbailletlatour.com">
+          <img src={baillet} className="h-20 mr-auto ml-auto" alt="Logo Fond Baillet Latour" />
+        </a>
       </div>
     </nav >
   )
