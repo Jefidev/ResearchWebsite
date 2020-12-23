@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import HomeLSFB from './HomeLSFB'
 import SignsSample from './SignsSample'
+import TestD3 from './TestD3'
 import unamur from '../assets/images/LSFB/UNamur.png'
 import baillet from '../assets/images/LSFB/baillet.svg'
 
@@ -13,6 +14,7 @@ function BaseSite(props) {
       <Switch>
         <Route path="/" exact component={HomeLSFB} />
         <Route path="/sample" exact component={SignsSample} />
+        <Route path="/d3" exact component={TestD3} />
       </Switch>
       <Bottom />
     </Router>
